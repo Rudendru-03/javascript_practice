@@ -1,4 +1,4 @@
-// currying --> it is a process in javascript that convert a function that takes multiple arguments into sequence of series of funciton that takes each one argument.
+// currying --> it is a process in javascript that convert a function that takes multiple arguments into sequence of series of funciton that takes one argument each.
 
 // we can do function currying by using bind method and by using closure .
 
@@ -19,19 +19,14 @@
 
 // add(3, 4, 3);
 
-function multiply(a, b) {
-  return a * b;
-}
+// By binding
 
-// const res = multiply(3, 4);
-// console.log(res);
-
-const multiplydumy = multiply.bind(this, 2);
-
-// function multiplydumy(b) {
-//   let a = 2;
+// function multiply(b) {
+//   let a = 10;
+//   console.log("a : ", a);
+//   console.log("b : ", b);
 //   return a * b;
 // }
 
-const res2 = multiplydumy(3);
-console.log(res2);
+// const multiplyByTwo = multiply.bind(null);
+// console.log(multiplyByTwo(20));
